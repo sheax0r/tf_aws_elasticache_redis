@@ -96,3 +96,13 @@ variable "tags" {
   description = "Tags for redis nodes"
   default     = {}
 }
+
+variable "redis_at_rest_encryption_enabled" {
+  description = "Specifies whether to enable at-rest encryption for redis."
+  default     = "false"
+}
+
+variable "redis_in_transit_encryption_enabled" {
+  description = "Specifies whether to enable in-transit encryption for redis."
+  default     = "false"
+}

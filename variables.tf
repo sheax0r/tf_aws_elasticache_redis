@@ -16,7 +16,8 @@ variable "alarm_actions" {
 
 variable "apply_immediately" {
   description = "Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is false."
-  default     = "false"
+
+  default = "false"
 }
 
 variable "allowed_cidr" {
@@ -102,7 +103,7 @@ variable "redis_at_rest_encryption_enabled" {
   default     = "false"
 }
 
-variable "redis_in_transit_encryption_enabled" {
+variable "redis_transit_encryption_enabled" {
   description = "Specifies whether to enable in-transit encryption for redis."
   default     = "false"
 }
